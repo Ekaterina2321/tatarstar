@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="modal.js"></script>
+    <title>TatarStar</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="header-block section">
+            <div class="logo">
+                <a href="index.html"><img src="assets/media/logo/TatarStar.png" alt=""></a>
+            </div>
+            <div class="nav">
+                <a href="#">О нас</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="#">Новинки</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+
+            <div class="search">
+                <img src="assets/media/header/icon3.png" alt="">
+                <input type="text" placeholder="Поиск...">
+            </div>
+
+            <div class="icons">
+                <img src="assets/media/header/icon1.png" alt="">
+                <a href="#openModal"><img src="assets/media/header/icon2.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- modal start -->
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#close" title="Close" class="close">×</a>
+                    <h3 class="modal-title">Корзина</h3>
+
+                </div>
+                <div class="modal-body">
+                    <!-- <p>Содержимое модального окна...</p> -->
+                    <div class="item-modal">
+                        <div class="text-modal">
+                            <h4 class="nazvanie-title">Название продукта</h4>
+                            <h4 class="kolvo-title">Кол-во</h4>
+                            <h4 class="price-title">Цена</h4>
+                        </div>
+                        <hr class="modal-hr">
+
+                        <div class="tovar-modal">
+                            <div class="img-opicanie">
+                                <img src="assets/media/popular/blouse.png" alt="">
+                                <div class="text-tovar">
+                                    <h4>Олимпийка Adidas DW6874</h4>
+                                    <p>Размер: М</p>
+                                </div>
+                            </div>
+
+                            <div class="kolvo-tovar">
+                                <p>+</p>
+                                <p><span>1 шт.</span></p>
+                                <p>-</p>
+                            </div>
+
+                            <div class="price-tovar">
+                                9 500 ₽
+                            </div>
+
+                            <div class="otmena">
+                                <img src="assets/media/basket/icon.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="price-basket">
+                            <p>Сумма: 9 500 ₽</p>
+                            <p>Доставка: 400 ₽</p>
+                            <h3>ИТОГОВАЯ СУММА: 9 900 ₽</h3>
+                        </div>
+
+                        <div class="button-zakaz">
+                            <a href="">Оформить заказ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal end -->
+
+</body>
+
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="modal.js"></script>
+    <title>TatarStar</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="header-block section">
+            <div class="logo">
+                <a href="index.html"><img src="assets/media/logo/TatarStar.png" alt=""></a>
+            </div>
+            <div class="nav">
+                <a href="#">О нас</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="#">Новинки</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+
+            <div class="search">
+                <img src="assets/media/header/icon3.png" alt="">
+                <input type="text" placeholder="Поиск...">
+            </div>
+
+            <div class="icons">
+                <img src="assets/media/header/icon1.png" alt="">
+                <a href="#openModal"><img src="assets/media/header/icon2.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- hr start -->
+    <hr class="catalog-hr section">
+    <!-- hr end -->
+
+    <!-- card start -->
+    <div class="card">
+        <div class="content-card section">
+            <div class="chlebnie-krochki-card">
+                <a href="" class="btn-catalog">
+                    <p>Каталог</p>
+                </a>
+                <hr class="line-card">
+                <a href="catalog.html" class="btn-card">
+                    <p>Толстовки и свитшоты</p>
+                </a>
+                <hr class="line-card">
+                <p><span>Кепка Nike Unstructured Futura Cap</span></p>
+            </div>
+            <div class="card-block">
+                <div class="img-card">
+                    <div class="small-img">
+                        <img src="assets/media/card/cap.png" alt="">
+                        <img src="assets/media/card/cap.png" alt="">
+                        <img src="assets/media/card/cap.png" alt="">
+                    </div>
+                    <div class="big-img">
+                        <img src="assets/media/card/cap.png" alt="">
+                    </div>
+                    <div class="text-card">
+                        <div class="title">
+                            <h3>Кепка Nike</h3>
+                            <h4>Unstructured Futura Cap</h4>
+                        </div>
+                        <div class="price-text">
+                            <div class="price-p">
+                                <p>9 500 ₽</p>
+                                <p><span>10 300₽</span></p>
+                            </div>
+                            <p class="stock">в наличие</p>
+                        </div>
+
+                        <div class="size-block">
+                            <p class="size-p">Размер</p>
+                            <div class="sizes-item">
+                                <div class="item">
+                                    <p>XS</p>
+                                </div>
+                                <div class="item">
+                                    <p>S</p>
+                                </div>
+                                <div class="item">
+                                    <p>M</p>
+                                </div>
+                                <div class="item">
+                                    <p>L</p>
+                                </div>
+                                <div class="item">
+                                    <p>XL</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="color-block">
+                            <p class="color-p">Цвет</p>
+                            <div class="color"></div>
+                        </div>
+                        <div class="button-card">
+                            <a href="" class="btn-basket">В корзину</a>
+                        </div>
+
+                        <div class="opicanie-block">
+                            <div class="opicanie-text expand-button" onclick="toggleText()">
+                                <p>Описание</p>
+                                <img src="assets/media/card/icon.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="content">
+                            <p>
+                                100% polyester, футбольный топ с коротким рукавом, камуфляж Tatarstar по всей
+                                поверхности, эмблема Tatarstar на левой стороне груди, расшифрованный логотип на груди,
+                                логотип Irongate "23" на спине
+                            </p>
+                        </div>
+
+                        <script>
+                            function toggleText() {
+                                var content = document.querySelector('.content');
+                                if (content.style.display === 'none') {
+                                    content.style.display = 'block';
+                                } else {
+                                    content.style.display = 'none';
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+                <div class="paginaziya-card">
+                    <div class="paginaziya-item">
+                        1
+                    </div>
+                    <div class="paginaziya-item">
+                        2
+                    </div>
+                    <div class="paginaziya-item">
+                        3
+                    </div>
+                    <div class="paginaziya-item">
+                        4
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card end -->
+
+    <!-- hr start -->
+    <hr class="section">
+    <!-- hr end -->
+
+    <!-- modal start -->
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#close" title="Close" class="close">×</a>
+                    <h3 class="modal-title">Корзина</h3>
+
+                </div>
+                <div class="modal-body">
+                    <!-- <p>Содержимое модального окна...</p> -->
+                    <div class="item-modal">
+                        <div class="text-modal">
+                            <h4 class="nazvanie-title">Название продукта</h4>
+                            <h4 class="kolvo-title">Кол-во</h4>
+                            <h4 class="price-title">Цена</h4>
+                        </div>
+                        <hr class="modal-hr">
+
+                        <div class="tovar-modal">
+                            <div class="img-opicanie">
+                                <img src="assets/media/popular/blouse.png" alt="">
+                                <div class="text-tovar">
+                                    <h4>Олимпийка Adidas DW6874</h4>
+                                    <p>Размер: М</p>
+                                </div>
+                            </div>
+
+                            <div class="kolvo-tovar">
+                                <p>+</p>
+                                <p><span>1 шт.</span></p>
+                                <p>-</p>
+                            </div>
+
+                            <div class="price-tovar">
+                                9 500 ₽
+                            </div>
+
+                            <div class="otmena">
+                                <img src="assets/media/basket/icon.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="price-basket">
+                            <p>Сумма: 9 500 ₽</p>
+                            <p>Доставка: 400 ₽</p>
+                            <h3>ИТОГОВАЯ СУММА: 9 900 ₽</h3>
+                        </div>
+
+                        <div class="button-zakaz">
+                            <a href="">Оформить заказ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="footer-block section">
+            <div class="reviews">
+                <h3>Оставьте отзыв</h3>
+                <input type="email" placeholder="Почта">
+                <input type="text" placeholder="Отзыв">
+                <a href="" class="btn-reviews">Отправить</a>
+            </div>
+            <div class="company">
+                <h3>О компании</h3>
+                <a href="#">Главная</a>
+                <a href="#">Каталог</a>
+                <a href="#">Новинки</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="contacts" id="contacts">
+                <h3>Контакты</h3>
+                <div class="info">
+                    <a href="tel: +79128722131" class="tel">8 (912) 872-21-31</a>
+                    <a href="" class="adress">г. Казань, ул. Галеева, д.3</a>
+                    <a href="mailto: tatarstar.info@mail.com" class="pochta">tatarstar.info@mail.com</a>
+                    <div class="icons-cont">
+                        <img src="assets/media/footer/youtube.png" alt="">
+                        <img src="assets/media/footer/vk.png" alt="">
+                        <img src="assets/media/footer/tg.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="" class="author-prava">2024 © АО “TatarStar”</a>
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>
